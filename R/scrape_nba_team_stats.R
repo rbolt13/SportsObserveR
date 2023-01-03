@@ -3,7 +3,6 @@
 #'@import rvest 
 #'@import magrittr
 #'
-#'
 #'@param slug is a char string that corresponds to the sports team.
 #'@param year is a char string that corresponds to the playoff year. 
 #'@param stats_tb is a char string that corresponds to the statistics table such as #per_game, #totals, #per_36_minutes, and #advanced.
