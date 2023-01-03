@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+# SportsObserveR 
+
+The goal of SportsObserveR is to scrape data off [Sports-Reference](https://www.sports-reference.com/). 
+
+- Project Status: [Under Construction]
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+## Installation
+
+You can install the development version of SportsObserveR from [GitHub](https://github.com/) with:
+
+``` {r, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("rbolt13/SportsObserveR")
+```
+
+## Example
+
+This is a basic example which shows you how to scrape totals data for the 1998 Chicago Bulls:
+
+```{r example}
+library(SportsObserveR)
+## basic example code
+scrape_nba_team_stats("CHI", "1998","#totals")
+```
