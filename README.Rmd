@@ -26,12 +26,24 @@ You can install the development version of SportsObserveR from [GitHub](https://
 devtools::install_github("rbolt13/SportsObserveR")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to scrape totals data for the 1998 Chicago Bulls:
+```{r}
+library(SportsObserveR)
+```
+
+
+1. Using `scrape_nba_team_stats()`, show the totals stats table for the 1998 Chicago Bulls.
 
 ```{r example}
 library(SportsObserveR)
 ## basic example code
 scrape_nba_team_stats("CHI", "1998","#totals")
 ```
+
+2. Using `scrape_nba_player_stats()` to show per game stats for Allen Iverson. 
+
+```{r}
+scrape_nba_player_stats("Allen Iverson", "#per_game")
+```
+
