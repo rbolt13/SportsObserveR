@@ -38,12 +38,14 @@ library(SportsObserveR)
 ```{r example}
 library(SportsObserveR)
 ## basic example code
-scrape_nba_team_stats("CHI", "1998","#totals")
+bulls_98 <- scrape_nba_team_stats("CHI", "1998","#totals")
+utils::head(bulls_98, 10)
 ```
 
 2. Using `scrape_nba_player_stats()` to show per game stats for Allen Iverson. 
 
 ```{r}
-scrape_nba_player_stats("Allen Iverson", "#per_game")
+ai <- scrape_nba_player_stats("Allen Iverson", "#per_game")
+utils::head(ai, 10)
 ```
 
