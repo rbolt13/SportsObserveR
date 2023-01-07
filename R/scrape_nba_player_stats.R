@@ -34,11 +34,8 @@ scrape_nba_player_stats <- function(name, stats_tb){
   # define team page URL
   url <- base::paste0("https://www.basketball-reference.com/players/",letter ,"/",last_5,first_2,"01.html")
   
-  # read url as html
-  html <- read_html(url)
-  
   # Read stats table
-  stats_tb <- html %>%
+  stats_tb <- url %>%
     read_html %>%
     html_node(stats_tb) %>% 
     html_table()
